@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Specificity Table</h1>
+    <table>
+        <thead>
+            
+          <tr>
+          <th>Item to be styled:</th>    
+          <th>How it appears in HTML:</th>
+          <th>How it appears in CSS:</th>
+          <th>Specificity level:</th>
+          
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>All items (universal selector)</td>
+            <td><span>n/a (only coded in stylesheet)</span></td>
+            <td><span class="code">* { style declaration }</span></td>
+            <td>Very low.</td>
+            
+          </tr>
+          <tr>
+            <td>Elements</td>
+            <td><span class="code">&lt;p&gt; (for example)</span></td>
+            <td><span class="code">p { style declaration }</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td>Elements with particular classes</td>  
+            <td><span class="code">&lt;p class="style"&gt;</span></td>
+            <td><span class="code">.style { style declaration }</span></td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>Elements with particular IDs</td>
+            <td><span class="code">&lt;p id="specialStyle"&gt;</span></td>
+            <td><span class="code">#specialStyle { style declaration }</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>Inline Styles</td>
+            <td><span class="code">&lt;p style="color: blue;"&gt;</span></td>
+            <td>n/a - no CSS styling, as it all occurs in the HTML only.</td>
+            <td>Very high</td>
+          </tr>
+          <tr>
+            <td>Using the !important declaration</td>
+            <td>You're more likely to see this bad boy in CSS.</td>
+            <td><span class="code">p { style declaration !important }</span></td>
+            <td>Bigly high</td>
+          </tr>
+        </tbody>
+      </table>
+
+</body>
+</html>

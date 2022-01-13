@@ -1,0 +1,35 @@
+body {
+    font-family: 'Spartan', sans-serif;
+    background-color: #f6f4c3;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: #c34e4e;
+  text-align: center;
+}
+
+table {
+  border: 2px solid #e70707;
+  width: 650px;
+  margin: 0 auto;
+  text-align: center
+}
+
+thead {
+  background-color: #173dc7;
+  color: white
+}
+
+td {
+  border-top: 1px solid darkorchid;
+  border: .5px solid
+}
+
+.code {
+  font-family: monospace;
+  background-color: #f3ecf2;
+}
